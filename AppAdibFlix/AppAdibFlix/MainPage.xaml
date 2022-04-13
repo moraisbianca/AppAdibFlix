@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppAdibFlix.MainPage">
+
+    <StackLayout>
+        <ScrollView> <!-- Barra de rolagem (o que está fora da tag, é fixo) -->
+            
+            <Grid ColumnDefinitions="*,*" RowDefinitions="*,*">
+
+                <!-- FAZER A ESTILIZAÇÃO DA GRID-->
+                <Button x:Name="btnAventura" Grid.Row="0" Grid.Column="0" Clicked="btnAventura_Clicked" Text="Aventura"/>
+                <Button x:Name="btnComedia" Grid.Row="0" Grid.Column="1" Clicked="btnComedia_Clicked" Text="Comedia"/>
+                <Button x:Name="btnDrama" Grid.Row="1" Grid.Column="0" Clicked="btnDrama_Clicked" Text="Drama"/>
+                <Button x:Name="btnTerror" Grid.Row="1" Grid.Column="1" Clicked="btnTerror_Clicked" Text="Terror"/>
+
+            </Grid>
+            
+        </ScrollView>
+    </StackLayout>
+
+</ContentPage>
