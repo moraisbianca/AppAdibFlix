@@ -11,11 +11,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Posters\bianca.png" />
+    <None Remove="Posters\logonetflix.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="Posters\bianca.png">
+    <EmbeddedResource Include="Posters\logonetflix.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>

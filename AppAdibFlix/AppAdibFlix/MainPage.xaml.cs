@@ -13,6 +13,10 @@ namespace AppAdibFlix
         public MainPage()
         {
             InitializeComponent();
+
+            NavigationPage.SetHasNavigationBar(this, false);
+
+            logo.Source = ImageSource.FromResource("AppAdibFlix.Posters.logonetflix.png");
         }
 
         private async void btnAventura_Clicked(object sender, EventArgs e)

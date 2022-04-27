@@ -15,6 +15,8 @@ namespace AppAdibFlix.Categorias
         public Aventura()
         {
             InitializeComponent();
+
+            NavigationPage.SetHasNavigationBar(this, false);
         }
     }
 }
