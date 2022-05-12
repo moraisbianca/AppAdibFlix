@@ -7,18 +7,14 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace AppAdibFlix.Categorias
+namespace AppAdibFlix.Filmes
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Terror : ContentPage
+    public partial class Uncharted : ContentPage
     {
-        public Terror()
+        public Uncharted()
         {
             InitializeComponent();
-
-            NavigationPage.SetHasNavigationBar(this, false);
-
-            logo.Source = ImageSource.FromResource("AppAdibFlix.Posters.logonetflix.png");
         }
     }
 }

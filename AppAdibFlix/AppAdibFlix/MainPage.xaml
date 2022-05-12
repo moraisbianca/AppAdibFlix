@@ -6,34 +6,58 @@
              
     <StackLayout>
         
-        <!-- LOGO -->
+        <!-- LOGO (Fora do scroll para ser fixa)-->
         <Image x:Name="logo" HeightRequest="150"/>
         
         <ScrollView> <!-- Barra de rolagem (o que está fora da tag, é fixo) -->
 
             <Grid RowSpacing="20" ColumnSpacing="10" Padding="10">
-                <Grid ColumnDefinitions="*,*" RowDefinitions="*,*" />
+                <Grid ColumnDefinitions="*,*" RowDefinitions="*,*,*,*" />
 
-                <!-- FAZER A ESTILIZAÇÃO DA GRID-->
+                <!-- FAZENDO A ESTILIZAÇÃO DA GRID-->
+                <!-- linha 1 -->
                 <Button x:Name="btnAventura" Grid.Row="0" Grid.Column="0"
-                        Style="{ StaticResource ButtonVermelhoMenu }" 
+                Style="{ StaticResource ButtonVermelhoMenu }" 
                         Clicked="btnAventura_Clicked"
                         Text="Aventura"/>
                 
-                <Button x:Name="btnComedia" Grid.Row="0" Grid.Column="1" 
+                <Button x:Name="btnAcao" Grid.Row="0" Grid.Column="1" 
                         Style="{ StaticResource ButtonVermelhoMenu }"
-                        Clicked="btnComedia_Clicked" 
-                        Text="Comedia"/>
-                
+                        Clicked="btnAcao_Clicked" 
+                        Text="Ação"/>
+
+                <!-- linha 2 -->
                 <Button x:Name="btnDrama" Grid.Row="1" Grid.Column="0" 
                         Style="{ StaticResource ButtonVermelhoMenu }"
                         Clicked="btnDrama_Clicked" 
                         Text="Drama"/>
+
+                <Button x:Name="btnComedia" Grid.Row="1" Grid.Column="1" 
+                        Style="{ StaticResource ButtonVermelhoMenu }"
+                        Clicked="btnComedia_Clicked" 
+                        Text="Comedia"/>
                 
-                <Button x:Name="btnTerror" Grid.Row="1" Grid.Column="1" 
+                <!-- linha 3 -->
+                <Button x:Name="btnFantasia" Grid.Row="2" Grid.Column="0" 
+                        Style="{ StaticResource ButtonVermelhoMenu }"
+                        Clicked="btnFantasia_Clicked" 
+                        Text="Fantasia"/>
+
+                <Button x:Name="btnFiccao" Grid.Row="2" Grid.Column="1" 
+                        Style="{ StaticResource ButtonVermelhoMenu }"
+                        Clicked="btnFiccao_Clicked" 
+                        Text="Ficção"/>
+                
+                <!-- linha 4 -->
+                <Button x:Name="btnTerror" Grid.Row="3" Grid.Column="0" 
                         Style="{ StaticResource ButtonVermelhoMenu }"
                         Clicked="btnTerror_Clicked" 
                         Text="Terror"/>
+
+                <Button x:Name="btnSuspense" Grid.Row="3" Grid.Column="1" 
+                        Style="{ StaticResource ButtonVermelhoMenu }"
+                        Clicked="btnSuspense_Clicked" 
+                        Text="Suspense"/>
             </Grid>
 
 

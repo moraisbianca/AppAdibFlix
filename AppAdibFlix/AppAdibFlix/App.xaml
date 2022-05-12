@@ -34,10 +34,11 @@
             <Setter Property="HorizontalOptions" Value="Center" />
         </Style>
 
-        <Style x:Key="ButtonPorters" TargetType="ImageButton">
+        <Style x:Key="ButtonPosters" TargetType="ImageButton">
             <Setter Property="Aspect" Value="Fill" />
             <Setter Property="BorderColor" Value="#555" />
             <Setter Property="BorderWidth" Value="2" />
+            <Setter Property="HeightRequest" Value="300" />
         </Style>
 
         <Style x:Key="LogoNaListaDePosters" TargetType="Image">

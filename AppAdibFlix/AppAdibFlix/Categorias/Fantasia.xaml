@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppAdibFlix.Categorias.Comedia"
+             x:Class="AppAdibFlix.Categorias.Fantasia"
              BackgroundColor="Black">
-    
+
     <ContentPage.Content>
 
         <StackLayout>
 
             <Image x:Name="logo" Style="{ StaticResource LogoNaListaDePosters }"/>
-            <Label Text="COMÉDIA" Style="{ StaticResource LabelTextoVermelho }" />
+            <Label Text="FANTASIA" Style="{ StaticResource LabelTextoVermelho }" />
 
             <ScrollView>
                 <!-- nessa grid estão os filmes (posters/imgbutton) -->

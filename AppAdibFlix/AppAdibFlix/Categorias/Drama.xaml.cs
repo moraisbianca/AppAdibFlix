@@ -15,6 +15,10 @@ namespace AppAdibFlix.Categorias
         public Drama()
         {
             InitializeComponent();
+
+            NavigationPage.SetHasNavigationBar(this, false);
+
+            logo.Source = ImageSource.FromResource("AppAdibFlix.Posters.logonetflix.png");
         }
     }
 }

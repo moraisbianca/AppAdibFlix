@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace AppAdibFlix.Categorias
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Terror : ContentPage
+    public partial class Suspense : ContentPage
     {
-        public Terror()
+        public Suspense()
         {
             InitializeComponent();
 

@@ -5,9 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using AppAdibFlix.Categorias;
 
 namespace AppAdibFlix
 {
+    //categorias: aventura, acao, drama, comedia, fantasia, ficcao, terror, suspense
     public partial class MainPage : ContentPage
     {
         public MainPage()
@@ -27,18 +29,19 @@ namespace AppAdibFlix
 
             } catch(Exception ex) // "Caso haja alguma excessão (erro)"
             {
-                await DisplayAlert("Ops", ex.Message, "OK"); // "ex.Message" mostra a mensagem de erro
+                await DisplayAlert("Ops, algo deu errado :(", ex.Message, "OK"); // "ex.Message" mostra a mensagem de erro
             }
         }
 
-        private async void btnComedia_Clicked(object sender, EventArgs e)
+        private async void btnAcao_Clicked(object sender, EventArgs e)
         {
-            try 
+            try
             {
-                await Navigation.PushAsync(new Categorias.Comedia());
-            } catch(Exception ex)
+                await Navigation.PushAsync(new Categorias.Acao());
+            }
+            catch (Exception ex)
             {
-                await DisplayAlert("Ops", ex.Message, "OK");
+                await DisplayAlert("Ops, algo deu errado :(", ex.Message, "OK");
             }
         }
 
@@ -50,10 +53,44 @@ namespace AppAdibFlix
             }
             catch (Exception ex)
             {
-                await DisplayAlert("Ops", ex.Message, "OK");
+                await DisplayAlert("Ops, algo deu errado :(", ex.Message, "OK");
             }
         }
 
+        private async void btnComedia_Clicked(object sender, EventArgs e)
+        {
+            try 
+            {
+                await Navigation.PushAsync(new Categorias.Comedia());
+            } catch(Exception ex)
+            {
+                await DisplayAlert("Ops, algo deu errado :(", ex.Message, "OK");
+            }
+        }
+
+        private async void btnFantasia_Clicked(object sender, EventArgs e)
+        {
+            try
+            {
+                await Navigation.PushAsync(new Categorias.Fantasia());
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Ops, algo deu errado :(", ex.Message, "OK");
+            }
+        }
+
+        private async void btnFiccao_Clicked(object sender, EventArgs e)
+        {
+            try
+            {
+                await Navigation.PushAsync(new Categorias.Ficcao());
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Ops, algo deu errado :(", ex.Message, "OK");
+            }
+        }
         private async void btnTerror_Clicked(object sender, EventArgs e)
         {
             try
@@ -62,7 +99,19 @@ namespace AppAdibFlix
             }
             catch (Exception ex)
             {
-                await DisplayAlert("Ops", ex.Message, "OK");
+                await DisplayAlert("Ops, algo deu errado :(", ex.Message, "OK");
+            }
+        }
+
+        private async void btnSuspense_Clicked(object sender, EventArgs e)
+        {
+            try
+            {
+                await Navigation.PushAsync(new Categorias.Suspense());
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Ops, algo deu errado :(", ex.Message, "OK");
             }
         }
     }

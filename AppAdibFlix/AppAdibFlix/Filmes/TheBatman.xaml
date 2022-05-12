@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppAdibFlix.Filmes.TheBatman"
+             BackgroundColor="Black">
+
+    <ContentPage.Content>
+        
+        <StackLayout  Orientation="Vertical">
+
+            <Image x:Name="logo" Style="{StaticResource LogoNoFilme}" />
+
+            <Grid>
+
+                <Grid ColumnDefinitions="*,*" RowDefinitions="*,*"/>
+                <WebView Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
+                         x:Name="visualizador"
+                         VerticalOptions="FillAndExpand"
+                         BackgroundColor="Black" />
+
+                <StackLayout Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2">
+
+                    <ScrollView>
+                        <Grid>
+                            <Grid ColumnDefinitions="*,*" RowDefinitions="*,*"/>
+                            <Image x:Name="poster" Grid.Row="0" Grid.Column="0" Aspect="AspectFill"/>
+
+                            <StackLayout Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" VerticalOptions="Center">
+                                <Label Text="TÍTULO" Style="{ StaticResource LabelTextoVermelho }"/>
+                                <Label Text="The Batman" Style="{ StaticResource LabelTextoBranco}"/>
+                                <Label Text="ANO DE LANÇAMENTO" Style="{ StaticResource LabelTextoVermelho }"/>
+                                <Label Text="2022" Style="{ StaticResource LabelTextoBranco }"/>
+                                <Label Text="DIREÇÃO" Style="{ StaticResource LabelTextoVermelho }"/>
+                                <Label Text="Matt Reeves" Style="{ StaticResource LabelTextoBranco }"/>
+                            </StackLayout>
+
+                            <StackLayout Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="2" Padding="10">
+                                <Label Text="SINOPSE" Style="{ StaticResource LabelTextoVermelho }"/>
+                                <Label Text="sinopse"
+                                       Style="{ StaticResource LabelTextoBranco }"/>
+                            </StackLayout>
+                            
+                        </Grid>
+                    </ScrollView>
+                    
+                </StackLayout>
+                    
+
+            </Grid>
+            
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>
